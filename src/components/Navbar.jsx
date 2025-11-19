@@ -8,8 +8,8 @@ export default function Navbar() {
   // In a real app, this would come from global state (Context/Redux) or a hook
   const [isLoggedIn, setIsLoggedIn] = useState(true); 
   const [user, setUser] = useState({
-    name: "Alex",
-    photoUrl: "https://i.pravatar.cc/150?img=3", // Placeholder photo URL
+    name: "",
+    photoUrl: "", // Placeholder photo URL
   });
 
   // Placeholder functions for demonstration
@@ -30,7 +30,7 @@ export default function Navbar() {
 
         {/* Main Navigation Links (Hidden on small screens) */}
         <div className="space-x-6 font-medium hidden md:block">
-          <a href="#translator" className="hover:text-blue-700">
+          <a href="#SwornTranslator" className="hover:text-blue-700">
             Sworn Translator
           </a>
           <a href="#services" className="hover:text-blue-700">

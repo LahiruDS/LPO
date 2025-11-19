@@ -5,6 +5,11 @@ import Services from "./components/Services";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import SwornTranslator from "./pages/SwornTranslator";
+
+
+
+
 
 function App() {
   return (
