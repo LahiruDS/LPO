@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // ADD THIS LINE: Import the WhatsApp icon
 import { FaWhatsapp } from "react-icons/fa"; 
 
@@ -6,11 +6,28 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function Navbar() {
   // 1. Placeholder State for Authentication
   // In a real app, this would come from global state (Context/Redux) or a hook
-  const [isLoggedIn, setIsLoggedIn] = useState(true); 
+  // Start as logged out so a full page reload shows the logged-out UI
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [user, setUser] = useState({
     name: "",
     photoUrl: "", // Placeholder photo URL
   });
+
+  // On first mount, clear common auth persistence so reloads show logged-out state.
+  useEffect(() => {
+    try {
+      // Remove common auth keys - adjust if your app uses different keys
+      localStorage.removeItem("token");
+      localStorage.removeItem("auth");
+      localStorage.removeItem("user");
+      localStorage.removeItem("isLoggedIn");
+    } catch (e) {
+      // ignore storage errors
+      console.warn("Could not clear auth from localStorage:", e);
+    }
+    // force logged-out UI
+    setIsLoggedIn(false);
+  }, []);
 
   // Placeholder functions for demonstration
   const handleLogout = () => {
