@@ -20,7 +20,7 @@ export default function About() {
 
         <div>
           <img
-            src="https://images.unsplash.com/photo-1521791136064-7986c2920216"
+            src="https://www.onelegal.com/wp-content/uploads/2024/01/what-to-know-about-being-a-legal-advocate.jpg"
             className="rounded-lg shadow"
             alt="About us"
           />
