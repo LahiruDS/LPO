@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Services() {
   const items = [
-    { title: "Legal Research", desc: "Accurate legal insights and case research." },
-    { title: "Contract Drafting", desc: "Professional drafting and reviewing services." },
+    { title: "Sworn Translation", desc: "Official certified translations for legal, academic, and immigration documents." },
+    { title: "Legal Document Review", desc: "Fast, accurate review of contracts, agreements, and legal files for errors and compliance." },
     { title: "Litigation Support", desc: "Back-office legal support for law firms." },
-    { title: "Document Review", desc: "High-quality analysis and verification." },
-    { title: "Document Review", desc: "High-quality analysis and verification." },
-    { title: "Document Review", desc: "High-quality analysis and verification." },
-    { title: "Document Review", desc: "High-quality analysis and verification." },
-    { title: "Document Review", desc: "High-quality analysis and verification." },
+    { title: "Contract Drafting", desc: "Professionally drafted and analyzed contracts tailored to business and personal needs." },
+    { title: "Legal Research", desc: "Detailed case law, statutory, and regulatory research to support legal matters." },
+    { title: "Corporate Compliance", desc: "Company registration, annual filings, and full corporate documentation support." },
+    { title: "Legal Transcription", desc: "Accurate transcription of court hearings, interviews, and legal recordings." },
+    { title: "Document Digitization", desc: "Scanning, converting, and organizing legal files into secure digital formats." },
 
 
   ];
