@@ -18,11 +18,11 @@ export default function Footer() {
       </p>
       <p>Address: 123 Main Street, Market building, Ja-Ela</p>
 
-      <p class="mt-4 text-sm text-gray-400 ">&copy; 2025 Your Website Name. All rights reserved.</p>
+      <p class="mt-4 text-sm text-gray-400 ">&copy; 2025 LPO Sri Lanka (PVT) LTD. All rights reserved.</p>
       
     </div>
     <div className="mr-10">
-      <img src="LPO7.png" className="w-64 h-auto md:w-80"></img>
+      <a href="/"><img src="LPO7.png" className="w-64 h-auto md:w-80"/></a>
     </div>
     
 </footer>

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 // ADD THIS LINE: Import the WhatsApp icon
 import { FaWhatsapp } from "react-icons/fa"; 
+import SignInModal from "./SignInModal";
+import SignUpModal from "./SignupModal";
 
 
 export default function Navbar() {
@@ -36,9 +38,34 @@ export default function Navbar() {
     console.log("User logged out");
   };
 
+  // Modal state for sign-in
+  const [showSignIn, setShowSignIn] = useState(false);
+
+  const handleOpenSignIn = () => setShowSignIn(true);
+  const handleCloseSignIn = () => setShowSignIn(false);
+
+  const handleSignIn = (newUser) => {
+    // For demo: set in-memory user and close modal. Do NOT persist to localStorage here.
+    setUser({ name: newUser.name || "User", photoUrl: newUser.photoUrl || "" });
+    setIsLoggedIn(true);
+    setShowSignIn(false);
+  };
+
+  // Sign-up modal state
+  const [showSignUp, setShowSignUp] = useState(false);
+  const handleOpenSignUp = () => setShowSignUp(true);
+  const handleCloseSignUp = () => setShowSignUp(false);
+
+  const handleSignUp = (data) => {
+    // For demo: set user from sign-up data and close modal. Replace with real sign-up flow as needed.
+    setUser({ name: (data.firstName || data.email || "User"), photoUrl: data.photoUrl || "" });
+    setIsLoggedIn(true);
+    setShowSignUp(false);
+  };
+
   return (
     <nav className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="max-w-6xl mx-auto px-6 py-1 flex justify-between items-center">
         
         {/* Logo/Brand */}
         <a href="/">
@@ -104,16 +131,20 @@ export default function Navbar() {
           ) : (
             // === LOGGED OUT STATE: Show Login/Sign Up Buttons ===
             <div className="space-x-2">
-              <button className="text-gray-600 hover:text-blue-700 font-medium px-3 py-1">
+              <button onClick={handleOpenSignIn} className="text-gray-600 hover:text-blue-700 font-medium px-3 py-1">
                 Login
               </button>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-150">
+              <button onClick={handleOpenSignUp} className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-150">
                 Sign Up
               </button>
             </div>
           )}
         </div>
       </div>
+      {/* SignIn Modal */}
+      <SignInModal isOpen={showSignIn} onClose={handleCloseSignIn} onSignIn={handleSignIn} />
+      {/* SignUp Modal */}
+      <SignUpModal isOpen={showSignUp} onClose={handleCloseSignUp} onSignUp={handleSignUp} />
     </nav>
   );
 }

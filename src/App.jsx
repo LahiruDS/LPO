@@ -6,6 +6,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SwornTranslator from "./pages/SwornTranslator";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Contact />
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }

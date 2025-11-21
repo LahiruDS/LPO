@@ -1,0 +1,73 @@
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+out/
+public/build/
+!.gitkeep
+
+# Framework specific
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+.svelte-kit/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Environment / secrets
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.secret
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+.cache/
+.terraform/
+*.tgz
+*.zip
+*.exe
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Ensure lockfiles are kept (uncomment if you want to ignore them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
