@@ -74,7 +74,7 @@ export default function Navbar() {
 
         {/* Main Navigation Links (Hidden on small screens) */}
         <div className="space-x-6 font-medium hidden md:block">
-          <a href="#SwornTranslator" className="hover:text-blue-700">
+          <a href="" className="hover:text-blue-700">
             Sworn Translator
           </a>
           <a href="#services" className="hover:text-blue-700">

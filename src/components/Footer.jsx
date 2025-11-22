@@ -7,12 +7,12 @@ export default function Footer() {
     <div class="container mx-auto  space-y-2 ml-7">
       <h2 class="text-lg font-semibold">Contact Us</h2>
       <p>Email:  
-        <a href="mailto:info@example.com" class="text-blue-400 hover:text-blue-500 underline">
-         lpocrylon@gmail.com
+        <a href="mailto:ceylonlpo@gmail.com" class="text-blue-400 hover:text-blue-500 underline">
+         ceylonlpo@gmail.com
         </a>
       </p>
       <p>Phone: 
-        <a href="tel:+1234567890" class="text-blue-400 hover:text-blue-500 underline">
+        <a href="tel:0412242532" class="text-blue-400 hover:text-blue-500 underline">
         +94 41 224 1532
         </a>
       </p>
@@ -22,7 +22,7 @@ export default function Footer() {
       
     </div>
     <div className="mr-10">
-      <a href="/"><img src="LPO7.png" className="w-64 h-auto md:w-80"/></a>
+      <a href="/"><img src="LPO7.png" className="w-64 h-auto md:w-100"/></a>
     </div>
     
 </footer>
