@@ -7,16 +7,18 @@ export default function Footer() {
     <div class="container mx-auto  space-y-2 ml-7">
       <h2 class="text-lg font-semibold">Contact Us</h2>
       <p>Email:  
-        <a href="mailto:ceylonlpo@gmail.com" class="text-blue-400 hover:text-blue-500 underline">
-         ceylonlpo@gmail.com
+        <a href="mailto:lpoceylon@gmail.com" class="text-blue-400 hover:text-blue-500 underline">
+         lpoceylon@gmail.com
         </a>
       </p>
       <p>Phone: 
-        <a href="tel:0412242532" class="text-blue-400 hover:text-blue-500 underline">
-        +94 41 224 1532
+        <a href="tel:0740189260" class="text-blue-400 hover:text-blue-500 underline">
+        +94 740189260
         </a>
       </p>
-      <p>Address: 123 Main Street, Market building, Ja-Ela</p>
+      <p>Ja-Ela office: No. 19, Market Building, Ja-Ela, Sri Lanka<br/>
+        Colombo office: No. 130, Hulftsdrop st, Colombo-12, Sri Lanka
+      </p>
 
       <p class="mt-4 text-sm text-gray-400 ">&copy; 2025 LPO Sri Lanka (PVT) LTD. All rights reserved.</p>
       
